@@ -33,7 +33,11 @@ public class SecurityConfiguration {
 					registry.anyRequest().authenticated();
 		
 				})
-		.formLogin(formLogin ->	formLogin.permitAll())	
+		//.formLogin(formLogin ->	formLogin.permitAll())
+		.formLogin(httpSecurityFormLoginConfigurer -> 
+					httpSecurityFormLoginConfigurer.loginPage("/login")
+					.successHandler(new AuthenticationSuccessHandler())
+					.permitAll())		
 		.build();
 	}
 	
