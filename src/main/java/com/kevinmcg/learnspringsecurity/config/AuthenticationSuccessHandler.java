@@ -1,4 +1,4 @@
-package com.kevinmcg.learnspringsecurity;
+package com.kevinmcg.learnspringsecurity.config;
 
 import java.io.IOException;
 

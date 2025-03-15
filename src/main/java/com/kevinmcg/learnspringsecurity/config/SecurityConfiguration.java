@@ -1,4 +1,4 @@
-package com.kevinmcg.learnspringsecurity;
+package com.kevinmcg.learnspringsecurity.config;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
